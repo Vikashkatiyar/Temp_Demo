@@ -15,6 +15,11 @@ public class MessageController {
         return "Hello " + name + ", How are you ?";
     }
 
+    @GetMapping("/{name}")
+    public String getAbusiveContent(String name){
+        return name + " BhoshdiWale😉";
+    }
+
     @GetMapping("/boot")
     public String getHelloFromSpringBoot(){
         return "Hello Spring Developer";
