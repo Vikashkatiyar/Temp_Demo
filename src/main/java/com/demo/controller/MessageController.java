@@ -20,4 +20,9 @@ public class MessageController {
         return name + " BhoshdiWale😉";
     }
 
+    @GetMapping("/boot")
+    public String getHelloFromSpringBoot(){
+        return "Hello Spring Developer";
+    }
+
 }
