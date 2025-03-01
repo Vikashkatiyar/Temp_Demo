@@ -15,4 +15,9 @@ public class MessageController {
         return "Hello " + name + ", How are you ?";
     }
 
+    @GetMapping("/boot")
+    public String getHelloFromSpringBoot(){
+        return "Hello Spring Developer";
+    }
+
 }
